@@ -1,0 +1,706 @@
+body {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bolder;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-variant: small-caps;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(77, 247, 91);
+}
+header {
+  height: 562px;
+  width: 100%;
+}
+.part1 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99;
+  background-color: rgb(255, 255, 255);
+}
+.logo {
+  width: 13%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  width: 70%;
+  color: black;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(0, 255, 13);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*///////////////////////////////////////////////*/
+.slid {
+  margin-top: 112px;
+  height: 80%;
+  width: 100%;
+  position: relative;
+  box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.55);
+}
+.test {
+  width: 100%;
+  height: 100%;
+}
+.test p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  color: rgb(17, 248, 17);
+  font-size: larger;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.test img {
+  position: absolute;
+}
+
+.nandb {
+  height: 30px;
+  width: 100%;
+
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 1;
+  margin-top: -240px;
+}
+.nandb button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: rgb(139, 211, 127);
+  z-index: 5;
+}
+.point {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: -40px;
+}
+.points {
+  width: 40px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: lawngreen;
+  margin-left: 10px;
+}
+.sss {
+  width: 20px;
+  height: 10px;
+  background-color: rgb(4, 0, 252);
+  margin-left: 10px;
+}
+/*///////////////////////////////////////////////////////////*/
+.allcardes {
+  width: 100%;
+  height: 1300px;
+  font-size: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: rgb(165, 243, 217);
+}
+
+.colcard1 {
+  width: 85%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.colcard1 div,
+.colcard2 div {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  border-radius: 35px 10px 35px 2px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+}
+.colcard1 img {
+  height: 60%;
+  width: 100%;
+  border-radius: 35px 0 0 0;
+}
+.colcard1 div p {
+  height: 20%;
+  width: 100%;
+}
+.colcard1 button {
+  height: 10%;
+  width: 40%;
+  background: linear-gradient(45deg, rgb(0, 51, 133) 0%, rgb(0, 255, 200) 100%);
+  border: none;
+  border-radius: 6px;
+}
+
+/*///////////////////////////////////*/
+
+.colcard2 {
+  width: 85%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*.colcard2 div {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  border-radius: 35px 10px 35px 2px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+}*/
+.colcard2 img {
+  height: 60%;
+  width: 100%;
+  border-radius: 35px 0 0 0;
+}
+.colcard2 div p {
+  height: 20%;
+  width: 100%;
+}
+.colcard2 button {
+  height: 10%;
+  width: 40%;
+  background: linear-gradient(45deg, rgb(0, 51, 133) 0%, rgb(0, 255, 200) 100%);
+  border: none;
+  border-radius: 6px;
+}
+/*0000000000000000000000000colcard300000000000000000*/
+
+.colcard3 {
+  width: 85%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.colcard3 div {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  border-radius: 35px 10px 35px 2px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+}
+.colcard3 img {
+  height: 60%;
+  width: 100%;
+  border-radius: 35px 0 0 0;
+}
+.colcard3 div p {
+  height: 20%;
+  width: 100%;
+}
+.colcard3 button {
+  height: 10%;
+  width: 40%;
+  background: linear-gradient(45deg, rgb(0, 51, 133) 0%, rgb(0, 255, 200) 100%);
+  border: none;
+  border-radius: 6px;
+}
+/*///////////////////////////////////*/
+.part3 {
+  margin-top: 20px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+}
+.wr {
+  height: 400px;
+  width: 45%;
+  background-color: rgb(196, 196, 196);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-between;
+  font-size: 13px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.55);
+}
+.im {
+  height: 400px;
+  width: 45%;
+  background-image: url(p5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+
+  box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.55);
+}
+/************************************************************************************/
+.part4 {
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.clom {
+  height: 550px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.colm1,
+.colm2,
+.colm3 {
+  width: 30%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}
+.colm1 div {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgb(251, 255, 0);
+}
+.colm1 img {
+  width: 100%;
+  height: 80%;
+}
+.colm1 button {
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(
+    0deg,
+    rgba(132, 255, 50) 0%,
+    rgba(1, 255, 43) 100%
+  );
+  border: none;
+  border-radius: 6px 6px 0px 0px;
+  z-index: 5;
+}
+.colm1 div .opc {
+  height: 80%;
+  width: 100%;
+  background-color: rgba(25, 112, 25, 0.452);
+  position: absolute;
+  z-index: 3;
+}
+
+/*.colm2 {
+  background-color: blue;
+  width: 30%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}/*/
+.colm2 div {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgb(251, 255, 0);
+}
+.colm2 img {
+  width: 100%;
+  height: 80%;
+}
+.colm2 button {
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(
+    0deg,
+    rgba(132, 255, 50) 0%,
+    rgba(1, 255, 43) 100%
+  );
+  border: none;
+  border-radius: 6px 6px 0px 0px;
+  z-index: 5;
+}
+.colm2 div .opc {
+  height: 80%;
+  width: 100%;
+  background-color: rgba(25, 112, 25, 0.452);
+  position: absolute;
+  z-index: 3;
+}
+/***************************************************************/
+/*.colm3 {
+  background-color: blue;
+  width: 30%;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}*/
+.colm3 div {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgb(251, 255, 0);
+}
+
+.colm3 img {
+  width: 100%;
+  height: 80%;
+}
+.colm3 button {
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(
+    0deg,
+    rgba(132, 255, 50) 0%,
+    rgba(1, 255, 43) 100%
+  );
+  border: none;
+  border-radius: 6px 6px 0px 0px;
+  z-index: 5;
+}
+
+.colm1 div .opc {
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+  background-color: rgba(8, 194, 8, 0.5);
+  position: absolute;
+  z-index: 3;
+}
+.colm1 div:hover .opc {
+  transition: 2s ease-in;
+  transform: translateY(-200px);
+}
+
+.colm2 div .opc {
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+  background-color: rgba(8, 194, 8, 0.5);
+  position: absolute;
+  z-index: 3;
+}
+.colm2 div:hover .opc {
+  transition: 2s ease-in;
+  transform: translateY(-200px);
+}
+
+.colm3 div .opc {
+  height: 100%;
+  width: 100%;
+  margin-top: 200px;
+  background-color: rgba(8, 194, 8, 0.5);
+  position: absolute;
+  z-index: 3;
+}
+.colm3 div:hover .opc {
+  transition: 2s ease-in;
+  transform: translateY(-200px);
+}
+/***********************************************************************/
+.part5 {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(58, 58, 58);
+}
+.part5 p {
+  font-size: 12px;
+}
+.p51 {
+  height: 80%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+.p52 {
+  height: 80%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+.p52 p i {
+  font-size: 15px;
+}
+.p53 {
+  height: 80%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+.p54 {
+  height: 80%;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+.p0 {
+  height: 26%;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.p54 img {
+  height: 60px;
+  width: 60px;
+}
+/*******************************************************************************/
+.part6 {
+  background-color: rgb(85, 85, 85);
+
+  height: 500px;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.loog {
+  text-align: center;
+  margin-left: 260px;
+}
+.part6 div:last-of-type {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  font-size: 50px;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 3px 5px 5px gray;
+}
+::-webkit-scrollbar-thumb {
+  height: 30px;
+  background-color: rgb(0, 255, 115);
+  border-radius: 10px;
+}
+
+/*////////////////////////////////*/
+@media (max-width: 767px) {
+  .part2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 3px;
+  }
+  .colcard1 {
+    width: 85%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+  }
+  .part5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 8px;
+  }
+  .p5 {
+    width: 100%;
+    text-align: center;
+  }
+  .p51 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+  }
+  .wr {
+    font-size: 8px;
+  }
+  .allcardes {
+    font-size: 8px;
+  }
+  .navbar a {
+    font-size: 8px;
+  }
+  .dropdown button {
+    height: 20px;
+    width: auto;
+    font-size: 8px;
+  }
+}
+.po {
+  background-color: royalblue;
+}
